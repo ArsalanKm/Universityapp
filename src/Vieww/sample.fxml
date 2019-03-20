@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Controller">
+    <children>
+        <AnchorPane id="root" fx:id="page" prefHeight="400.0" prefWidth="500.0" styleClass="-">
+            <children>
+                <Button fx:id="enter" layoutX="544.0" layoutY="207.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="60.0" text="login" />
+                <TextField fx:id="User" layoutX="460.0" layoutY="68.0" prefHeight="37.0" prefWidth="227.0" promptText="username" />
+                <PasswordField fx:id="Pass" layoutX="460.0" layoutY="142.0" prefHeight="31.0" prefWidth="227.0" promptText="password" />
+                <TextField fx:id="VisiblePasswordfield" layoutX="815.0" layoutY="222.0" prefHeight="31.0" prefWidth="227.0" visible="false" />
+                <CheckBox fx:id="PassWordShow" layoutX="474.0" layoutY="281.0" mnemonicParsing="false" onAction="#displayPassword" text="ShowPassWord" />
+            <TextArea layoutX="474.0" layoutY="302.0" prefHeight="48.0" prefWidth="200.0" text="if you dont have an account click register">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            
+            <Button fx:id="WantToRegister" layoutX="454.0" layoutY="212.0" mnemonicParsing="false" onAction="#Registration" prefHeight="21.0" prefWidth="60.0" text="Register">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
