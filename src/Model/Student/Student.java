@@ -62,9 +62,10 @@ public class Student {
         this.credit += credit;
     }
 
+
     @Override
     public String toString() {
-        return "Username : " + this.getUsername() + "                   " + "Password : " + this.getPassword()+"\n";
+        return "\n"+"Username : " + this.getUsername() + "                   " + "Password : " + this.getPassword()+"\n";
     }
 
 

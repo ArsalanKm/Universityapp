@@ -17,6 +17,11 @@ public class Schedule {
             "Tuesday",
             "Wednesday"
     };
+    public static final String Times_In_Week[]=
+    {
+            "8-10","10-12","14-16","16-18"
+
+    };
     int day;
     int time;
 
