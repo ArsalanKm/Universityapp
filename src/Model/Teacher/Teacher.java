@@ -27,4 +27,8 @@ public class Teacher {
     public void setPassword(String password) {
         this.password = password;
     }
+    @Override
+    public String toString() {
+        return "Username : " + this.getUsername() + "                   " + "Password : " + this.getPassword();
+    }
 }

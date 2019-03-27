@@ -6,15 +6,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.TeachersLoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.TeachersLoginController">
    <children>
       <Pane layoutX="3.0" layoutY="1.0" prefHeight="400.0" prefWidth="594.0">
          <children>
-            <TextField fx:id="UserNameTextField" layoutX="223.0" layoutY="50.0" promptText="UserName" />
+            <TextField fx:id="UserNameTextField" layoutX="223.0" layoutY="48.0" promptText="UserName" />
             <PasswordField fx:id="PassWordTextField" layoutX="223.0" layoutY="93.0" promptText="PassWord" />
             <Button fx:id="LogInButtom" layoutX="320.0" layoutY="157.0" mnemonicParsing="false" onAction="#Login" text="LogIn" />
             <Button fx:id="RegisterButtom" layoutX="223.0" layoutY="157.0" mnemonicParsing="false" onAction="#Register" text="Register" />
+            <Button fx:id="ExitBtm" layoutX="464.0" layoutY="361.0" mnemonicParsing="false" onAction="#Exit" prefHeight="35.0" prefWidth="133.0" text="Exit" />
          </children>
       </Pane>
    </children>

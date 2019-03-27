@@ -13,14 +13,14 @@ import static Model.Teacher.Teacher.All_Teachers;
 
 
 public class TeachersLoginController {
-    Teacher LoggedTeacher = new Teacher();
+    public static Teacher LoggedTeacher = new Teacher();
 
     @FXML
     TextField UserNameTextField;
     @FXML
     PasswordField PassWordTextField;
     @FXML
-    Button LogInButtom, RegisterButtom;
+    Button LogInButtom, RegisterButtom,ExitBtm;
 
     public void Login(javafx.event.ActionEvent actionEvent) throws IOException {
 
@@ -29,7 +29,7 @@ public class TeachersLoginController {
 
             LoggedTeacher = All_Teachers.get(i);
             if (UserNameTextField.getText().equals(LoggedTeacher.getUsername()) && (PassWordTextField.getText().equals(LoggedTeacher.getPassword()))) {
-                new pageLoader().LoadScene("../Vieww/StudentsPanel/studentPanel.fxml");
+                new pageLoader().LoadScene("../Vieww/TeachersPanel/TeacherPanel.fxml");
                 break;
             }
 
@@ -39,5 +39,10 @@ public class TeachersLoginController {
 
     public void Register(javafx.event.ActionEvent actionEvent) throws IOException {
         new pageLoader().LoadScene("../Vieww/TeachersPanel/TeachersRegistrationPanel.fxml");
+
+    }
+    public void Exit() throws IOException {
+        new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
+
     }
 }

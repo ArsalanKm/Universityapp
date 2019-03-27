@@ -4,10 +4,7 @@ import Model.Student.Student;
 import Model.pageLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
@@ -15,7 +12,7 @@ import java.io.IOException;
 
 
 public class Controller extends Student {
-    static Student Loggedstudent = new Student();
+   public static Student Loggedstudent = new Student();
     @FXML
     public ImageView ing;
     @FXML
@@ -27,8 +24,14 @@ public class Controller extends Student {
     @FXML
     public AnchorPane page;
     @FXML
-    public Button WantToRegister;
-
+    public Button WantToRegister,ExitBtm;
+    @FXML
+    public static ListView<String> sudentslist;
+//    public void initialize() throws IOException {
+//        sudentslist.getItems().add(Loggedstudent.toString());
+//        new pageLoader().LoadScene("../Vieww/TeachersPanel/StudentsListPanel.fxml");
+//
+//    }
 
     @FXML
     public void Registration(ActionEvent actionEvent) throws IOException {
@@ -63,6 +66,11 @@ break;
             VisiblePasswordfield.setVisible(false);
             Pass.setVisible(true);
         }
+    }
+
+    public void Exit() throws IOException {
+        new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
+
     }
 
 }
