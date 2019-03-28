@@ -13,7 +13,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="ClassInformation">
             <items>
-              <MenuItem fx:id="ClassInformation" mnemonicParsing="false" onAction="#GOToClasses" text="ClassInformation" />
+              <MenuItem fx:id="ClassInformation" mnemonicParsing="false" onAction="#Go_TO_Class_Informations" text="ClassInformation" />
             </items>
           </Menu>
           <Menu id="SettingItem" mnemonicParsing="false" text="Setting">

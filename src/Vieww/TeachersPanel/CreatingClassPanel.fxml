@@ -20,27 +20,27 @@
       <TextField fx:id="ClassNameField" layoutX="60.0" layoutY="88.0" promptText="Class Name" style="-fx-alignment: center;" />
       <MenuButton layoutX="29.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Time">
         <items>
-          <MenuItem fx:id="FirstTime" mnemonicParsing="false" text="8-10" />
-          <MenuItem fx:id="SecondTime" mnemonicParsing="false" text="10-12" />
-            <MenuItem fx:id="ThirdTime" mnemonicParsing="false" text="14-16" />
-            <MenuItem fx:id="FourthTime" mnemonicParsing="false" text="16-18" />
+          <MenuItem fx:id="FirstTime" mnemonicParsing="false" onAction="#FirstTimeFunction" text="8-10" />
+          <MenuItem fx:id="SecondTime" mnemonicParsing="false" onAction="#SecondTimeFunction" text="10-12" />
+            <MenuItem fx:id="ThirdTime" mnemonicParsing="false" onAction="#ThirdTimeFunction" text="14-16" />
+            <MenuItem fx:id="FourthTime" mnemonicParsing="false" onAction="#FourthTimeFunction" text="16-18" />
         </items>
       </MenuButton>
       <MenuButton layoutX="171.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="109.0" text="Unit">
         <items>
-          <MenuItem fx:id="TwoVahed" mnemonicParsing="false" text="2" />
-          <MenuItem fx:id="ThreeVahed" mnemonicParsing="false" text="3" />
-            <MenuItem fx:id="FourVahed" mnemonicParsing="false" text="4" />
+          <MenuItem fx:id="TwoVahed" mnemonicParsing="false" onAction="#TwoVahedFunction" text="2" />
+          <MenuItem fx:id="ThreeVahed" mnemonicParsing="false" onAction="#ThreeVahedFunction" text="3" />
+            <MenuItem fx:id="FourVahed" mnemonicParsing="false" onAction="#FourVahedFunction" text="4" />
         </items>
       </MenuButton>
       <Button fx:id="BackBtm" layoutX="373.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="76.0" text="back" />
       <MenuButton layoutX="309.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Day">
         <items>
-          <MenuItem fx:id="Saturday" mnemonicParsing="false" text="saturday" />
-          <MenuItem fx:id="Sunday" mnemonicParsing="false" text="sunday" />
-            <MenuItem fx:id="Monday" mnemonicParsing="false" text="monday" />
-            <MenuItem fx:id="Tuesday" mnemonicParsing="false" text="tuesday" />
-            <MenuItem fx:id="Wedensday" mnemonicParsing="false" text="wedensday" />
+          <MenuItem fx:id="Saturday" mnemonicParsing="false" onAction="#SaturdayFunction" text="saturday" />
+          <MenuItem fx:id="Sunday" mnemonicParsing="false" onAction="#SundayFunction" text="sunday" />
+            <MenuItem fx:id="Monday" mnemonicParsing="false" onAction="#MondayFunction" text="monday" />
+            <MenuItem fx:id="Tuesday" mnemonicParsing="false" onAction="#TuesdayFunction" text="tuesday" />
+            <MenuItem fx:id="Wedensday" mnemonicParsing="false" onAction="#WedensdayFunction" text="wedensday" />
         </items>
       </MenuButton>
    </children>

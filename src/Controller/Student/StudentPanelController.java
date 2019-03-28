@@ -11,6 +11,7 @@ import java.io.IOException;
 
 import static Controller.Student.Controller.Loggedstudent;
 import static Controller.Student.Teachers.TeachersLoginController.LoggedTeacher;
+import static Model.Student.Student.classes;
 
 public class StudentPanelController {
     @FXML
@@ -20,10 +21,10 @@ public class StudentPanelController {
     @FXML
     Button ExitButtum;
 @FXML MenuItem
-        ChooseClassItem;
+        ChooseClassItem,ClassInformation;
 @FXML
 public void initialize() {
-    StudentTextArea.setText(Loggedstudent.toString());
+    StudentTextArea.setText(Loggedstudent.toString()+"\n"+Loggedstudent.getAuthors(classes));
 }
     public void ChangPassWord(javafx.event.ActionEvent actionEvent) throws IOException {
         new pageLoader().LoadScene("../Vieww/StudentsPanel/ChangePassWordPanel.fxml");
@@ -37,6 +38,10 @@ public void initialize() {
     }
     public void GOToClasses() throws IOException {
         new pageLoader().LoadScene("../Vieww/StudentsPanel/ChooseClass.fxml");
+
+    }
+    public void Go_TO_Class_Informations() throws IOException {
+        new pageLoader().LoadScene("../Vieww/StudentsPanel/ClassInfornationPanel.fxml");
 
     }
 }

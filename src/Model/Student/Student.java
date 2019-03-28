@@ -14,9 +14,8 @@ public class Student {
     public static List<String> LIST_VIEW = new ArrayList<>();
 
 
-    public  static  List  <TeacherClass> classes;
+    public  static  List  <String> classes=new ArrayList<>();
     public static List<ObservableList<String>> ClassInformation;
-
 
 
 
@@ -77,12 +76,9 @@ public class Student {
     public String toString() {
         return "\n"+"Username : " + this.getUsername() + "                   " + "Password : " + this.getPassword()+"\n";
     }
-    private static ArrayList<String> getAuthors(String authors) {
-        ArrayList books = new ArrayList<String>();
-        String[] splitStr = authors.split("\\*");
-        for (int i=0;i<splitStr.length;i++) {
-            books.add(splitStr[i]);
-        }
+    public static List<String> getAuthors(List<String> authors) {
+        List books = new ArrayList<String>();
+       books=authors;
         return books;
     }
 }

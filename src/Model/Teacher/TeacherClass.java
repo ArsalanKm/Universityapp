@@ -11,7 +11,7 @@ public class TeacherClass {
 
 
     private String name;
-    public String capacity;
+    public int capacity;
     private String time;
     private String day;
     private int unit;
@@ -37,11 +37,11 @@ public class TeacherClass {
         this.day = day;
     }
 
-    public String getCapacity() {
+    public int getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(String capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 

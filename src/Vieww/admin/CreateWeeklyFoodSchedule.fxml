@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="481.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vieww.admin.CreateWeeklyFoodSchedule">
+   <children>
+      <MenuButton layoutX="486.0" layoutY="81.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" style="-fx-background-color: pink;" text="شنبه">
+        <items>
+          <MenuItem mnemonicParsing="false" text="قورمه سبزی " />
+          <MenuItem mnemonicParsing="false" text="ماهی پلو" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="391.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="1شنیه">
+        <items>
+          <MenuItem mnemonicParsing="false" text="جوجه کباب " />
+          <MenuItem mnemonicParsing="false" text="قفقازی" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="286.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="2شنبه">
+        <items>
+          <MenuItem mnemonicParsing="false" text="جلو کباب" />
+          <MenuItem mnemonicParsing="false" text="آش" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="193.0" layoutY="81.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="3شنبه">
+        <items>
+          <MenuItem mnemonicParsing="false" text="چلوبرگ" />
+          <MenuItem mnemonicParsing="false" text="شیشلیک" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="90.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="4شنبه">
+        <items>
+          <MenuItem mnemonicParsing="false" text="خورشت قیمه" />
+          <MenuItem mnemonicParsing="false" text="ماکارونی" />
+        </items>
+      </MenuButton>
+      <Text fill="#cd1515" layoutX="256.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="برنامه ی هفتگی غذا ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="242.0" layoutY="227.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: green;" text="ایجادوذخیره ی برنامه" textFill="#040f21" />
+   </children>
+</AnchorPane>
