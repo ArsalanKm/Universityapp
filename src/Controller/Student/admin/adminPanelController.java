@@ -44,6 +44,10 @@ public void initialize()
         new pageLoader().LoadScene("../Vieww/admin/ChangPasswordPanel.fxml");
 
     }
+    public void Go_To_Create_Food() throws IOException {
+        new pageLoader().LoadScene("../Vieww/admin/CreateWeeklyFoodSchedule.fxml");
+
+    }
     public void Exit() throws IOException {
         new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
 

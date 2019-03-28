@@ -27,6 +27,11 @@
               <MenuItem fx:id="ChooseClassItem" mnemonicParsing="false" onAction="#GOToClasses" text="ChooseClass" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="ChosseFood">
+               <items>
+                  <MenuItem fx:id="ChosseFoo" mnemonicParsing="false" onAction="#GOToChosseFood" text="ChosseFood" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
       <TextArea fx:id="StudentTextArea" layoutX="621.0" prefHeight="200.0" prefWidth="213.0" />

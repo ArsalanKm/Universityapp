@@ -44,4 +44,8 @@ public void initialize() {
         new pageLoader().LoadScene("../Vieww/StudentsPanel/ClassInfornationPanel.fxml");
 
     }
+    public void GOToChosseFood() throws IOException {
+        new pageLoader().LoadScene("../Vieww/StudentsPanel/ChooseFood.fxml");
+
+    }
 }
