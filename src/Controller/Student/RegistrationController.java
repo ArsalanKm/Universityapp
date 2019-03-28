@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import java.io.IOException;
 
 import static Controller.Student.Controller.Loggedstudent;
+import static Model.Student.Student.LIST_VIEW;
 
 public class RegistrationController {
 
@@ -29,14 +30,14 @@ public class RegistrationController {
             student.setUsername(NameTextField.getText());
             student.setPassword(PassWord.getText());
             if (PassWord.getText().length() <= 8)
-                new Alert(Alert.AlertType.ERROR, "Your Password must atleast have 8 charecters ").showAndWait();
+             new Alert(Alert.AlertType.ERROR, "Your Password must atleast have 8 charecters ").showAndWait();
 
             if (!PassWord.getText().equals(RepeatedPassWord.getText()))
                 new Alert(Alert.AlertType.ERROR, "Your repeated password is not correct ").showAndWait();
             else {
 
                 Student.All_Student.add(student);
-
+                LIST_VIEW.add(student.toString());
                 Student student = new Student();
                 NameTextField.setText("");
                 PassWord.setText("");

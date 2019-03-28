@@ -19,7 +19,8 @@ public class StudentPanelController {
     TextArea StudentTextArea;
     @FXML
     Button ExitButtum;
-
+@FXML MenuItem
+        ChooseClassItem;
 @FXML
 public void initialize() {
     StudentTextArea.setText(Loggedstudent.toString());
@@ -33,5 +34,9 @@ public void initialize() {
     }
     public void Go_ToEntrance(javafx.event.ActionEvent actionEvent) throws IOException {
         new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
+    }
+    public void GOToClasses() throws IOException {
+        new pageLoader().LoadScene("../Vieww/StudentsPanel/ChooseClass.fxml");
+
     }
 }

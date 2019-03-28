@@ -11,7 +11,7 @@ public class TeacherClass {
 
 
     private String name;
-    public int capacity;
+    public String capacity;
     private String time;
     private String day;
     private int unit;
@@ -37,11 +37,11 @@ public class TeacherClass {
         this.day = day;
     }
 
-    public int getCapacity() {
+    public String getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
+    public void setCapacity(String capacity) {
         this.capacity = capacity;
     }
 
@@ -62,7 +62,7 @@ public class TeacherClass {
     }
 
     public String makeString() {
-        return "Name: " + this.getName() + "    " + "Day: " + this.getDay() + " " + "Time: " + this.getTime() + "    " + "Unit: " + this.getUnit();
+        return "Name: " + this.getName() +"  Capacity:   "+this.getCapacity()+ "    " + "Day: " + this.getDay() + " " + "Time: " + this.getTime() + "    " + "Unit: " + this.getUnit();
     }
 
     public String addStudent(Student student, String ClassName) {

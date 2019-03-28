@@ -11,6 +11,8 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
+import static Model.Teacher.Teacher.TEACHERS_LIST;
+
 
 public class TeachersRegistrationController {
     @FXML
@@ -33,6 +35,7 @@ public class TeachersRegistrationController {
                 new Alert(Alert.AlertType.ERROR, "Your Password must atleast have 8 charecters ").showAndWait();
             else {
                 Teacher.All_Teachers.add(teacher);
+                TEACHERS_LIST.add(teacher.toString());
                 Teacher teacher = new Teacher();
                 UserNameTextField.setText("");
                 PassWordTextField.setText("");

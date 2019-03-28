@@ -15,7 +15,7 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Button fx:id="CreateBtm" layoutX="196.0" layoutY="261.0" mnemonicParsing="false" onAction="#Create" text="create" />
+      <Button fx:id="CreateBtm" layoutX="194.0" layoutY="261.0" mnemonicParsing="false" onAction="#Create" text="create" />
       <TextField fx:id="ClassCapacityField" layoutX="259.0" layoutY="88.0" promptText="Class Cpacity" style="-fx-alignment: center;" />
       <TextField fx:id="ClassNameField" layoutX="60.0" layoutY="88.0" promptText="Class Name" style="-fx-alignment: center;" />
       <MenuButton layoutX="29.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Time">
@@ -33,6 +33,7 @@
             <MenuItem fx:id="FourVahed" mnemonicParsing="false" text="4" />
         </items>
       </MenuButton>
+      <Button fx:id="BackBtm" layoutX="373.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="76.0" text="back" />
       <MenuButton layoutX="309.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Day">
         <items>
           <MenuItem fx:id="Saturday" mnemonicParsing="false" text="saturday" />

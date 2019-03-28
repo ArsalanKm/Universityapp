@@ -9,6 +9,7 @@ import javafx.scene.control.ListView;
 import java.io.IOException;
 
 import static Model.Student.Student.All_Student;
+import static Model.Student.Student.LIST_VIEW;
 import static Model.Teacher.Teacher.All_Teachers;
 
 public class StudentsListController {
@@ -18,7 +19,10 @@ public class StudentsListController {
     Button Back_Btm,Exit_Btm;
     public void initialize() {
 
-        StudentsList.getItems().add(All_Student.toString()+"\n");
+        StudentsList.getItems().addAll(LIST_VIEW);
+
+
+
     }
     public void Exit() throws IOException {
         new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");

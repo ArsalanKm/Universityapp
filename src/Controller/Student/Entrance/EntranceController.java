@@ -27,7 +27,7 @@ public class EntranceController {
         new pageLoader().LoadScene("../Vieww/TeachersPanel/TeacherLogIn.fxml");
     }
     public void To_admin_Login(javafx.event.ActionEvent actionEvent) throws IOException {
-        new pageLoader().LoadScene("../Vieww/sample.fxml");
+        new pageLoader().LoadScene("../Vieww/admin/adminLoginPanel.fxml");
     }
 
 }

@@ -1,6 +1,7 @@
 package Model.Student;
 
 import Model.Teacher.TeacherClass;
+import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,17 @@ public class Student {
     public static List<String> LIST_VIEW = new ArrayList<>();
 
 
-    private TeacherClass[] classes;
+    public  static  List  <TeacherClass> classes;
+    public static List<ObservableList<String>> ClassInformation;
 
+
+
+
+
+
+    public void setCredit(double credit) {
+        this.credit = credit;
+    }
 
     private String username;
     private String password;
@@ -67,6 +77,12 @@ public class Student {
     public String toString() {
         return "\n"+"Username : " + this.getUsername() + "                   " + "Password : " + this.getPassword()+"\n";
     }
-
-
+    private static ArrayList<String> getAuthors(String authors) {
+        ArrayList books = new ArrayList<String>();
+        String[] splitStr = authors.split("\\*");
+        for (int i=0;i<splitStr.length;i++) {
+            books.add(splitStr[i]);
+        }
+        return books;
+    }
 }
