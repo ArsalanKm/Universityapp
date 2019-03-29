@@ -9,6 +9,7 @@ import javafx.scene.control.TextArea;
 
 import java.io.IOException;
 
+import static Controller.Student.Teachers.TeachersLoginController.LoggedTeacher;
 import static Model.Student.Student.LIST_VIEW;
 import static Model.Teacher.Teacher.All_Teachers;
 
@@ -28,7 +29,7 @@ public class TeacherPanelController {
     Button Exit;
 
     public void initialize() {
-        StudentTextArea.setText(All_Teachers.toString());
+        StudentTextArea.setText(LoggedTeacher.toString());
         studentslist.getItems().addAll(LIST_VIEW);
     }
 

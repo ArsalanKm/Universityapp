@@ -57,8 +57,8 @@ public class StudentsChooseClassController {
         tempJoinClass = TeacherClass.ALL_CREAT_CLASS.get(selectedIndex);
 
 
-        for (int i = 0; i < Student.classes.size(); i++)
-            if (tempJoinClass.makeString().equalsIgnoreCase(Student.classes.get(i))) {
+        for (int i = 0; i < Loggedstudent.classes.size(); i++)
+            if (tempJoinClass.makeString().equalsIgnoreCase(Loggedstudent.classes.get(i))) {
                 hasBeenInTheList = true;
                 break;
             }
@@ -70,7 +70,7 @@ public class StudentsChooseClassController {
 
             if (tempJoinClass.getCapacity() > 0) {
 
-                Student.classes.add(TeacherClass.CLASS_LIST.get(selectedIndex));
+                Loggedstudent.classes.add(TeacherClass.CLASS_LIST.get(selectedIndex));
                 tempJoinClass.capacity--;
                 classeslist.getItems().setAll(TeacherClass.CLASS_LIST);
 

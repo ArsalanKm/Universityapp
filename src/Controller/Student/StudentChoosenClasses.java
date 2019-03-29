@@ -9,7 +9,6 @@ import javafx.scene.text.TextFlow;
 
 import java.io.IOException;
 import static Controller.Student.Controller.Loggedstudent;
-import static Model.Student.Student.classes;
 
 
 public class StudentChoosenClasses {
@@ -23,7 +22,7 @@ public class StudentChoosenClasses {
     TextArea StudentTextArea;
 public void initialize()
 {
-    StudentTextArea.setText("\n"+Loggedstudent.getAuthors(classes)+"\n\n");}
+    StudentTextArea.setText("\n"+Loggedstudent.getAuthors(Loggedstudent.classes)+"\n\n");}
 public void back() throws IOException {
     new pageLoader().LoadScene("../Vieww/StudentsPanel/studentPanel.fxml");
 
