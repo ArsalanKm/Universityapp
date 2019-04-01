@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Entrance.EntranceController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Entrance.EntranceController">
    <children>
       <HBox layoutX="35.0" layoutY="66.0" prefHeight="100.0" prefWidth="519.0" style="-fx-background-image: url('src\21.jpg');;">
          <children>
-            <TextArea prefHeight="100.0" prefWidth="525.0" style="-fx-background-color: blue; -fx-border-color: pink;" text="Welcom To MyUniversity Management App">
+            <TextArea prefHeight="100.0" prefWidth="525.0" style="-fx-background-color: red; -fx-border-color: pink;" text="Welcom To MyUniversity Management App">
                <font>
                   <Font size="19.0" />
                </font>
             </TextArea>
          </children>
       </HBox>
-      <Button fx:id="StudentLogin" layoutX="35.0" layoutY="214.0" mnemonicParsing="false" onAction="#To_Student_Login" prefHeight="26.0" prefWidth="156.0" text="Log in as student" />
-      <Button fx:id="teacherLogin" layoutX="231.0" layoutY="213.0" mnemonicParsing="false" onAction="#To_Teacher_Login" prefHeight="26.0" prefWidth="166.0" text="Log in as teacher" />
-      <Button fx:id="adminLogin" layoutX="417.0" layoutY="214.0" mnemonicParsing="false" onAction="#To_admin_Login" prefHeight="26.0" prefWidth="148.0" text="Log in as admin" />
+      <Button fx:id="StudentLogin" layoutX="35.0" layoutY="214.0" mnemonicParsing="false" onAction="#To_Student_Login" prefHeight="26.0" prefWidth="156.0" style="-fx-background-color: white;" text="Log in as student" />
+      <Button fx:id="teacherLogin" layoutX="231.0" layoutY="213.0" mnemonicParsing="false" onAction="#To_Teacher_Login" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: white;" text="Log in as teacher" />
+      <Button fx:id="adminLogin" layoutX="417.0" layoutY="214.0" mnemonicParsing="false" onAction="#To_admin_Login" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: white;" text="Log in as admin" />
    </children>
 </AnchorPane>

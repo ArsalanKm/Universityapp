@@ -21,11 +21,11 @@ public class StudentPanelController {
     Button ExitButtum;
     @FXML
     MenuItem
-            ChooseClassItem, ClassInformation;
+            ChooseClassItem, ClassInformation,ChargYourCredit;
 
     @FXML
     public void initialize() {
-        StudentTextArea.setText(Loggedstudent.toString() + "\n" + Loggedstudent.getAuthors(Loggedstudent.classes));
+        StudentTextArea.setText(Loggedstudent.toString() + "\n" + Loggedstudent.ShowCredit());
     }
 
     public void ChangPassWord(javafx.event.ActionEvent actionEvent) throws IOException {
@@ -57,5 +57,9 @@ public class StudentPanelController {
 
     public void GOToWeekFoodSchedule() throws IOException {
         new pageLoader().LoadScene("../Vieww/StudentsPanel/ChoosenFood.fxml");
+    }
+    public void GoToChargYourCredit() throws IOException {
+        new pageLoader().LoadScene("../Vieww/StudentsPanel/ChargYourCredit.fxml");
+
     }
 }

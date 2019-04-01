@@ -7,14 +7,14 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.ChoosenFood">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.ChoosenFood">
    <children>
-      <ListView fx:id="listView" layoutX="62.0" layoutY="67.0" prefHeight="258.0" prefWidth="478.0" />
+      <ListView fx:id="listView" layoutX="62.0" layoutY="67.0" prefHeight="258.0" prefWidth="478.0" style="-fx-background-color: white;" />
       <Text fill="#9a1010" layoutX="247.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Choosen meals">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Button fx:id="Back" layoutX="482.0" layoutY="345.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: green;" text="Back" textFill="#08390a" />
+      <Button fx:id="Back" layoutX="482.0" layoutY="345.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: white;" text="Back" textFill="#08390a" />
    </children>
 </AnchorPane>

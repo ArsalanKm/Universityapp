@@ -8,17 +8,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="574.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.CreatingClassController">
+<AnchorPane prefHeight="574.0" prefWidth="459.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.CreatingClassController">
    <children>
       <Text fill="#c23e3e" layoutX="175.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creating class">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Button fx:id="CreateBtm" layoutX="194.0" layoutY="261.0" mnemonicParsing="false" onAction="#Create" text="create" />
-      <TextField fx:id="ClassCapacityField" layoutX="259.0" layoutY="88.0" promptText="Class Cpacity" style="-fx-alignment: center;" />
-      <TextField fx:id="ClassNameField" layoutX="60.0" layoutY="88.0" promptText="Class Name" style="-fx-alignment: center;" />
-      <MenuButton layoutX="29.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Time">
+      <Button fx:id="CreateBtm" layoutX="194.0" layoutY="261.0" mnemonicParsing="false" onAction="#Create" style="-fx-background-color: white;" text="create" />
+      <TextField fx:id="ClassCapacityField" layoutX="259.0" layoutY="88.0" promptText="Class Cpacity" style="-fx-alignment: center; -fx-background-color: white;" />
+      <TextField fx:id="ClassNameField" layoutX="60.0" layoutY="88.0" promptText="Class Name" style="-fx-alignment: center; -fx-background-color: white;" />
+      <MenuButton layoutX="29.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center; -fx-background-color: white;" text="Time">
         <items>
           <MenuItem fx:id="FirstTime" mnemonicParsing="false" onAction="#FirstTimeFunction" text="8-10" />
           <MenuItem fx:id="SecondTime" mnemonicParsing="false" onAction="#SecondTimeFunction" text="10-12" />
@@ -26,15 +26,15 @@
             <MenuItem fx:id="FourthTime" mnemonicParsing="false" onAction="#FourthTimeFunction" text="16-18" />
         </items>
       </MenuButton>
-      <MenuButton layoutX="171.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="109.0" text="Unit">
+      <MenuButton layoutX="171.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: white;" text="Unit">
         <items>
           <MenuItem fx:id="TwoVahed" mnemonicParsing="false" onAction="#TwoVahedFunction" text="2" />
           <MenuItem fx:id="ThreeVahed" mnemonicParsing="false" onAction="#ThreeVahedFunction" text="3" />
             <MenuItem fx:id="FourVahed" mnemonicParsing="false" onAction="#FourVahedFunction" text="4" />
         </items>
       </MenuButton>
-      <Button fx:id="BackBtm" layoutX="373.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="76.0" text="back" />
-      <MenuButton layoutX="309.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center;" text="Day">
+      <Button fx:id="BackBtm" layoutX="373.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: white;" text="back" />
+      <MenuButton layoutX="309.0" layoutY="154.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" style="-fx-alignment: center; -fx-background-color: white;" text="Day">
         <items>
           <MenuItem fx:id="Saturday" mnemonicParsing="false" onAction="#SaturdayFunction" text="saturday" />
           <MenuItem fx:id="Sunday" mnemonicParsing="false" onAction="#SundayFunction" text="sunday" />

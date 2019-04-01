@@ -21,13 +21,13 @@ public  List<String> FoodsInWeek=new ArrayList<>();
 
 
 
-    public void setCredit(double credit) {
+    public void setCredit(int credit) {
         this.credit = credit;
     }
 
     private String username;
     private String password;
-    private double credit = 0;
+    public int credit = 0;
     private int course = 0;
     private double grade = 20;
 
@@ -47,7 +47,7 @@ public  List<String> FoodsInWeek=new ArrayList<>();
         this.password = password;
     }
 
-    public double getCredit() {
+    public int getCredit() {
         return credit;
     }
 
@@ -80,5 +80,9 @@ public  List<String> FoodsInWeek=new ArrayList<>();
         List books = new ArrayList<String>();
        books=authors;
         return books;
+    }
+    public String ShowCredit()
+    {
+        return "Your Credit is:   "+this.getCredit();
     }
 }

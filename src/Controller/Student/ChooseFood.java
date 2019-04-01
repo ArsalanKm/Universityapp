@@ -1,7 +1,6 @@
 package Controller.Student;
 
 import Model.Food;
-import Model.Student.Student;
 import Model.pageLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -10,8 +9,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
-import static Controller.Student.Controller.Loggedstudent;
 
+import static Controller.Student.Controller.Loggedstudent;
 import static Model.Food.All_FOOD;
 import static Model.Food.All_FOOD_LIST;
 
@@ -51,16 +50,16 @@ public class ChooseFood {
 
         Food tempFood = new Food();
         tempFood = All_FOOD.get(selectedIndex);
-
-
-
-
+        if (All_FOOD.get(selectedIndex).getFood_Price() > Loggedstudent.credit) {
+            new Alert(Alert.AlertType.ERROR, "Your credit is not enough For this food \n Go and Charge your Credit").showAndWait();
+        } else {
+            Loggedstudent.credit -= All_FOOD.get(selectedIndex).getFood_Price();
             Loggedstudent.FoodsInWeek.add(All_FOOD_LIST.get(selectedIndex));
 
             listView.getItems().setAll(All_FOOD_LIST);
-            new Alert(Alert.AlertType.INFORMATION,"This Food Successfully added to your Food Schedule").showAndWait();
+            new Alert(Alert.AlertType.INFORMATION, "This Food Successfully added to your Food Schedule").showAndWait();
 
         }
-
+    }
 
 }
