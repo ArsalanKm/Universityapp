@@ -4,9 +4,9 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="437.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.StudentsListController">
+<AnchorPane prefHeight="437.0" prefWidth="627.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.StudentsListController">
    <children>
-      <ListView fx:id="StudentsList" layoutX="43.0" layoutY="14.0" prefHeight="361.0" prefWidth="514.0" />
+      <ListView fx:id="StudentsList" layoutX="43.0" layoutY="14.0" onMouseClicked="#findIndex" prefHeight="361.0" prefWidth="514.0" style="-fx-background-color: white;" />
       <Button fx:id="Exit_Btm" layoutX="464.0" layoutY="384.0" mnemonicParsing="false" onAction="#Exit" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: red;" text="Exit" />
       <Button fx:id="Back_Btm" layoutX="43.0" layoutY="384.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: green;" text="back" />
    </children>

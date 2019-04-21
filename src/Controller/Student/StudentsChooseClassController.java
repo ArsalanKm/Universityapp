@@ -1,6 +1,5 @@
 package Controller.Student;
 
-import Model.Student.Student;
 import Model.Teacher.TeacherClass;
 import Model.pageLoader;
 import javafx.event.ActionEvent;
@@ -15,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static Controller.Student.Controller.Loggedstudent;
+import static Model.Teacher.TeacherClass.ALL_CREAT_CLASS;
 
 
 public class StudentsChooseClassController {
@@ -23,7 +23,7 @@ public class StudentsChooseClassController {
     ListView<String> classeslist;
     @FXML
     Button BackBtm, JoinBtm;
-    TeacherClass tempClass = new TeacherClass();
+      static TeacherClass tempClass = new TeacherClass();
     private List<String> personalList = new ArrayList<>();
     @FXML
     private ListView<String> listView;
@@ -50,15 +50,15 @@ public class StudentsChooseClassController {
     }
 
 
-    public void join(ActionEvent actionEvent) {
+    public void join(ActionEvent actionEvent) throws IOException {
         boolean hasBeenInTheList = false;
 
         TeacherClass tempJoinClass = new TeacherClass();
-        tempJoinClass = TeacherClass.ALL_CREAT_CLASS.get(selectedIndex);
+        tempJoinClass = ALL_CREAT_CLASS.get(selectedIndex);
 
 
         for (int i = 0; i < Loggedstudent.classes.size(); i++)
-            if (tempJoinClass.makeString().equalsIgnoreCase(Loggedstudent.classes.get(i))) {
+            if (tempJoinClass.makeString().equals(Loggedstudent.classes.get(i))) {
                 hasBeenInTheList = true;
                 break;
             }
@@ -69,10 +69,14 @@ public class StudentsChooseClassController {
         } else {
 
             if (tempJoinClass.getCapacity() > 0) {
-
+                tempJoinClass.JOINED_STUDENT.add(Loggedstudent.toString());
                 Loggedstudent.classes.add(TeacherClass.CLASS_LIST.get(selectedIndex));
-                tempJoinClass.capacity--;
+                int k=tempJoinClass.capacity--;
+                ALL_CREAT_CLASS.get(selectedIndex).setCapacity(k);
+
+                tempJoinClass.setCapacity(k);
                 classeslist.getItems().setAll(TeacherClass.CLASS_LIST);
+                new pageLoader().LoadScene("../Vieww/StudentsPanel/studentPanel.fxml");
 
 
             } else {

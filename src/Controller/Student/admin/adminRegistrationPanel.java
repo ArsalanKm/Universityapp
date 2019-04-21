@@ -22,6 +22,7 @@ public void register() throws IOException {
     else {
         LoggedAdmin.setUsername(UserNameTextField.getText());
         LoggedAdmin.setPassword(PassWordTextField.getText());
+        LoggedAdmin.setHave_admin(true);
         new Alert(Alert.AlertType.INFORMATION, "You Successfully registered").showAndWait();
         new pageLoader().LoadScene("../Vieww/admin/adminLoginPanel.fxml");
 

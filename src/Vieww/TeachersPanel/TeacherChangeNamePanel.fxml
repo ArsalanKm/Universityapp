@@ -4,11 +4,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.TeacherChangeName">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="519.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.TeacherChangeName">
     <children>
-        <TextField fx:id="OldnameTextField" layoutX="160.0" layoutY="32.0" promptText="Oldname" />
-        <TextField fx:id="NewnameTextField" layoutX="160.0" layoutY="91.0" promptText="Newname" />
-        <Button fx:id="changeButtun" layoutX="260.0" layoutY="174.0" mnemonicParsing="false" onAction="#ChangeName" text="change" />
-        <Button fx:id="BackButtun" layoutX="172.0" layoutY="174.0" mnemonicParsing="false" onAction="#Back_Buttom" prefHeight="26.0" prefWidth="62.0" text="Back" />
+        <TextField fx:id="OldnameTextField" layoutX="186.0" layoutY="43.0" promptText="Oldname" style="-fx-background-color: white; -fx-border-color: red;" />
+        <TextField fx:id="NewnameTextField" layoutX="185.0" layoutY="84.0" promptText="Newname" style="-fx-background-color: white; -fx-border-color: red;" />
+        <Button fx:id="changeButtun" layoutX="279.0" layoutY="148.0" mnemonicParsing="false" onAction="#ChangeName" style="-fx-background-color: green;" text="change" />
+        <Button fx:id="BackButtun" layoutX="186.0" layoutY="147.0" mnemonicParsing="false" onAction="#Back_Buttom" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: yellow;" text="Back" />
     </children>
 </AnchorPane>

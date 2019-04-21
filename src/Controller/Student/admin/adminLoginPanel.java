@@ -3,6 +3,7 @@ package Controller.Student.admin;
 import Model.admin.admin;
 import Model.pageLoader;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -28,6 +29,7 @@ public class adminLoginPanel {
 
 
         }
+        else new Alert(Alert.AlertType.ERROR,"your password or username is wrong ").showAndWait();
     }
 
     public void Register(javafx.event.ActionEvent actionEvent) throws IOException {

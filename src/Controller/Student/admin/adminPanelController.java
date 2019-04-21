@@ -13,7 +13,7 @@ import static Controller.Student.admin.adminLoginPanel.LoggedAdmin;
 
 public class adminPanelController {
     @FXML
-    MenuItem TeachersListMenuItem,ClassesListMenuItem,StudentsListMenuItem,ChangPassWordMenuItem,ChangeNameMenuItem;
+    MenuItem TeachersListMenuItem,ClassesListMenuItem,StudentsListMenuItem,ChangPassWordMenuItem,ChangeNameMenuItem,LibraryItem;
 @FXML
     Button
     ExitBtm;
@@ -48,6 +48,15 @@ public void initialize()
         new pageLoader().LoadScene("../Vieww/admin/CreateWeeklyFoodSchedule.fxml");
 
     }
+    public void Go_TO_Library() throws IOException {
+        new pageLoader().LoadScene("../Vieww/admin/Creating_Library.fxml");
+    }
+    public void Go_TO_BooksList() throws IOException {
+        new pageLoader().LoadScene("../Vieww/admin/LibraryBooksList.fxml");
+
+    }
+
+
     public void Exit() throws IOException {
         new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
 

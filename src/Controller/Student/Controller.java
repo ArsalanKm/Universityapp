@@ -47,8 +47,8 @@ public class Controller extends Student {
             Loggedstudent = All_Student.get(i);
             if (User.getText().equals(Loggedstudent.getUsername()) && (Pass.getText().equals(Loggedstudent.getPassword())) || VisiblePasswordfield.getText().equals(Loggedstudent.getPassword())) {
                 new pageLoader().LoadScene("../Vieww/StudentsPanel/studentPanel.fxml");
-break;
             }
+            else new Alert(Alert.AlertType.ERROR,"your password or username is wrong ").showAndWait();
         }
 
 

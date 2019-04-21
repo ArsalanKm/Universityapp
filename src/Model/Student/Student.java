@@ -14,7 +14,9 @@ public class Student {
     public static List<String> LIST_VIEW = new ArrayList<>();
 
 
-    public     List  <String> classes=new ArrayList<>();
+    public  List  <String> classes=new ArrayList<>();
+    public  List  <String> ReservedBooks=new ArrayList<>();
+
     public static List<ObservableList<String>> ClassInformation;
 
 public  List<String> FoodsInWeek=new ArrayList<>();

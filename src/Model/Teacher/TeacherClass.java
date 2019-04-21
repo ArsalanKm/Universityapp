@@ -18,7 +18,7 @@ public class TeacherClass {
 
     public static List<TeacherClass> ALL_CREAT_CLASS = new ArrayList<>(); // list of class refrence
     public static List<String> CLASS_LIST = new ArrayList<>(); // list of class in string type
-    //public  List<String> JOINED_STUDENT = new ArrayList<>();
+    public static List<String> JOINED_STUDENT = new ArrayList<>();
 
 
     public void setName(String name) {
@@ -63,6 +63,11 @@ public class TeacherClass {
 
     public String makeString() {
         return "Name: " + this.getName() +"  Capacity:   "+this.getCapacity()+ "    " + "Day: " + this.getDay() + " " + "Time: " + this.getTime() + "    " + "Unit: " + this.getUnit();
+    }
+    public String toString()
+    {
+        return "Name: " + this.getName() +"    " + "Day: " + this.getDay() + " " + "Time: " + this.getTime() + "    " + "Unit: " + this.getUnit();
+
     }
 
     public String addStudent(Student student, String ClassName) {

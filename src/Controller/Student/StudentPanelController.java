@@ -4,6 +4,7 @@ import Model.Student.Student;
 import Model.pageLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 
@@ -21,11 +22,13 @@ public class StudentPanelController {
     Button ExitButtum;
     @FXML
     MenuItem
-            ChooseClassItem, ClassInformation,ChargYourCredit;
-
+            ChooseClassItem, ClassInformation,ChargYourCredit,SeeLibrary;
+@FXML
+    ListView<String> StudentreservedBooks;
     @FXML
     public void initialize() {
         StudentTextArea.setText(Loggedstudent.toString() + "\n" + Loggedstudent.ShowCredit());
+        StudentreservedBooks.getItems().addAll(Loggedstudent.ReservedBooks);
     }
 
     public void ChangPassWord(javafx.event.ActionEvent actionEvent) throws IOException {
@@ -60,6 +63,10 @@ public class StudentPanelController {
     }
     public void GoToChargYourCredit() throws IOException {
         new pageLoader().LoadScene("../Vieww/StudentsPanel/ChargYourCredit.fxml");
+
+    }
+    public void GoToLibraryList() throws IOException {
+        new pageLoader().LoadScene("../Vieww/StudentsPanel/LibraryBooksList.fxml");
 
     }
 }

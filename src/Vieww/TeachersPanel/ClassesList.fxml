@@ -6,15 +6,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.ClassListController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.Teachers.ClassListController">
    <children>
       <Text fill="#dd1f1f" fontSmoothingType="LCD" layoutX="244.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ClassesList">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <ListView fx:id="ClassesList" layoutX="50.0" layoutY="114.0" prefHeight="230.0" prefWidth="512.0" />
-      <Button fx:id="BackBtm" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <ListView fx:id="ClassesList" layoutX="50.0" layoutY="114.0" onMouseClicked="#findIndex" prefHeight="230.0" prefWidth="512.0" style="-fx-background-color: white;" />
+      <Button fx:id="BackBtm" layoutX="474.0" layoutY="352.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: red;" text="back" />
+      <Button fx:id="deleteBtm" layoutX="89.0" layoutY="352.0" mnemonicParsing="false" onAction="#deleteClass" style="-fx-background-color: red;" text="delete" textAlignment="CENTER" />
    </children>
 </AnchorPane>

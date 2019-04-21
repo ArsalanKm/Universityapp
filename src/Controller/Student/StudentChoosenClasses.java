@@ -20,9 +20,11 @@ public class StudentChoosenClasses {
     TextFlow ClassesList;
     @FXML
     TextArea StudentTextArea;
+    @FXML
+    ListView<String> classeslist;
 public void initialize()
 {
-    StudentTextArea.setText("\n"+Loggedstudent.getAuthors(Loggedstudent.classes)+"\n\n");}
+    classeslist.getItems().addAll(Loggedstudent.classes);}
 public void back() throws IOException {
     new pageLoader().LoadScene("../Vieww/StudentsPanel/studentPanel.fxml");
 

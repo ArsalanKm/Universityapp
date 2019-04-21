@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="564.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student.admin.BooksListController">
+   <children>
+      <ListView fx:id="Bookslist" layoutX="46.0" layoutY="95.0" prefHeight="321.0" prefWidth="366.0" style="-fx-border-color: yellow;" />
+      <Text fill="#ca2929" fontSmoothingType="LCD" layoutX="175.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookslist" wrappingWidth="108.05316162109375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="backBtm" layoutX="149.0" layoutY="458.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: green;" text="back" />
+   </children>
+</AnchorPane>

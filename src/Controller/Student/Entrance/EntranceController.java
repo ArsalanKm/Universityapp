@@ -16,7 +16,7 @@ public class EntranceController {
 
     @FXML
     public void initialize() {
-        StudentLogin.setText("akbar");
+        StudentLogin.setText("Students");
     }
 
     public void To_Student_Login(javafx.event.ActionEvent actionEvent) throws IOException {

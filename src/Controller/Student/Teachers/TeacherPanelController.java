@@ -1,5 +1,6 @@
 package Controller.Student.Teachers;
 
+import Model.Teacher.TeacherClass;
 import Model.pageLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

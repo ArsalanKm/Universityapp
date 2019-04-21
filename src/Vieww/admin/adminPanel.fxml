@@ -12,7 +12,7 @@
    <children>
       <BorderPane layoutX="24.0" layoutY="24.0" prefHeight="574.0" prefWidth="469.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <MenuBar style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+            <MenuBar prefHeight="26.0" prefWidth="493.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="TeachersList">
                   <items>
@@ -38,6 +38,12 @@
                   <Menu mnemonicParsing="false" text="CreateFood">
                      <items>
                         <MenuItem fx:id="creatingFood" mnemonicParsing="false" onAction="#Go_To_Create_Food" text="CreateFood" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="LibraryItem" mnemonicParsing="false" onAction="#Go_TO_Library" text="Library">
+                     <items>
+                        <MenuItem fx:id="LibraryItem" mnemonicParsing="false" onAction="#Go_TO_Library" text="addBookToLibrary" />
+                        <MenuItem fx:id="BooksList" mnemonicParsing="false" onAction="#Go_TO_BooksList" text="BooksList" />
                      </items>
                   </Menu>
               </menus>

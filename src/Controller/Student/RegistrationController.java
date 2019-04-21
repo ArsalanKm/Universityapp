@@ -31,7 +31,7 @@ public class RegistrationController {
             student.setPassword(PassWord.getText());
             if (PassWord.getText().length() <= 8)
              new Alert(Alert.AlertType.ERROR, "Your Password must atleast have 8 charecters ").showAndWait();
-
+else
             if (!PassWord.getText().equals(RepeatedPassWord.getText()))
                 new Alert(Alert.AlertType.ERROR, "Your repeated password is not correct ").showAndWait();
             else {

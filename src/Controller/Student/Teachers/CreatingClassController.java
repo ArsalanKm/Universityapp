@@ -11,6 +11,8 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
+import static Controller.Student.Controller.Loggedstudent;
+import static Controller.Student.Teachers.TeachersLoginController.LoggedTeacher;
 import static Model.Teacher.TeacherClass.CLASS_LIST;
 
 
@@ -90,11 +92,15 @@ public class CreatingClassController {
         Tclass.setCapacity(Capacity);
         TeacherClass.ALL_CREAT_CLASS.add(Tclass);
         CLASS_LIST.add(Tclass.makeString());
+        LoggedTeacher.TeachersClasses.add(Tclass);
+//        Loggedstudent.classes.add(TeacherClass.CLASS_LIST.get(selectedIndex));
 
+        LoggedTeacher.StringOf_TeachersClasses.add(Tclass.makeString());
         TeacherClass Tclass = new TeacherClass();
         Tclass.setTime("");
         Tclass.setDay("");
         new Alert(Alert.AlertType.INFORMATION, "You Create a new Class").showAndWait();
+        new pageLoader().LoadScene("../Vieww/TeachersPanel/TeacherPanel.fxml");
 
     }
 

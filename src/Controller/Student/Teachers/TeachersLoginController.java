@@ -3,6 +3,7 @@ package Controller.Student.Teachers;
 import Model.Teacher.Teacher;
 import Model.pageLoader;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -20,7 +21,7 @@ public class TeachersLoginController {
     @FXML
     PasswordField PassWordTextField;
     @FXML
-    Button LogInButtom, RegisterButtom,ExitBtm;
+    Button LogInButtom, RegisterButtom, ExitBtm;
 
     public void Login(javafx.event.ActionEvent actionEvent) throws IOException {
 
@@ -30,7 +31,7 @@ public class TeachersLoginController {
             LoggedTeacher = All_Teachers.get(i);
             if (UserNameTextField.getText().equals(LoggedTeacher.getUsername()) && (PassWordTextField.getText().equals(LoggedTeacher.getPassword()))) {
                 new pageLoader().LoadScene("../Vieww/TeachersPanel/TeacherPanel.fxml");
-                break;
+
             }
 
 
@@ -41,6 +42,7 @@ public class TeachersLoginController {
         new pageLoader().LoadScene("../Vieww/TeachersPanel/TeachersRegistrationPanel.fxml");
 
     }
+
     public void Exit() throws IOException {
         new pageLoader().LoadScene("../Vieww/Entrance/EntrancePanel.fxml");
 
